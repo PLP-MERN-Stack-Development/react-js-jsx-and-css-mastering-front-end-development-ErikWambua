@@ -48,7 +48,7 @@ You’ll see your app running locally.
 ### 🌐 Live Deployment
 
 The live project is available at:  
-👉 **https://plp-taskmanager-cx75z8q6e-erick-wambuas-projects.vercel.app**
+👉 **https://plp-taskmanager.netlify.app/**
 
 ---
 
@@ -140,4 +140,4 @@ This project is created for educational purposes as part of the **PLP curriculum
 ## 🚀 Deployment Summary
 
 The app is available locally at: **http://localhost:5173**  
-And publicly at: **https://plp-taskmanager-cx75z8q6e-erick-wambuas-projects.vercel.app**
+And publicly at: **https://plp-taskmanager.netlify.app/**
