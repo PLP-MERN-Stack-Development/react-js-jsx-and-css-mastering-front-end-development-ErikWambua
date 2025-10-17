@@ -1,70 +1,143 @@
-# React.js and Tailwind CSS Assignment
+# PLP Task Manager - React.js & Tailwind CSS Assignment
 
-This assignment focuses on building a responsive React application using JSX and Tailwind CSS, implementing component architecture, state management, hooks, and API integration.
+A modern, responsive task management application built with React.js and Tailwind CSS that demonstrates component architecture, state management, hooks usage, and API integration.
 
-## Assignment Overview
+## 🚀 Features
 
-You will:
-1. Set up a React project with Vite and Tailwind CSS
-2. Create reusable UI components
-3. Implement state management using React hooks
-4. Integrate with external APIs
-5. Style your application using Tailwind CSS
+- **Task Management**: Add, complete, delete, and filter tasks
+- **Dark/Light Mode**: Theme switcher with persistent preferences
+- **API Integration**: Fetch and display data from JSONPlaceholder API
+- **Responsive Design**: Works perfectly on mobile, tablet, and desktop
+- **Local Storage**: Tasks and theme preferences persist between sessions
+- **Search & Pagination**: Search through API data with pagination
 
-## Getting Started
+## 🛠️ Tech Stack
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Install dependencies:
-   ```
-   npm install
-   ```
-4. Start the development server:
-   ```
-   npm run dev
-   ```
+- **Frontend**: React.js 18, JSX
+- **Styling**: Tailwind CSS
+- **Build Tool**: Vite
+- **State Management**: React Hooks (useState, useEffect, useContext)
+- **API**: JSONPlaceholder REST API
+- **Deployment**: Vercel / Localhost
 
-## Files Included
+## 📦 Installation & Setup
 
-- `Week3-Assignment.md`: Detailed assignment instructions
-- Starter files for your React application:
-  - Basic project structure
-  - Pre-configured Tailwind CSS
-  - Sample component templates
+### ⚙️ Running Locally
 
-## Requirements
+To run the app on your local machine:
 
-- Node.js (v18 or higher)
-- npm or yarn
-- Modern web browser
-- Code editor (VS Code recommended)
+```bash
+# 1. Clone the repository
+git clone <your-repository-url>
+cd plp-task-manager
 
-## Project Structure
+# 2. Install dependencies
+npm install
+
+# 3. Start the development server
+npm run dev
+```
+
+Then open your browser and visit:  
+👉 **http://localhost:5173**
+
+You’ll see your app running locally.
+
+---
+
+### 🌐 Live Deployment
+
+The live project is available at:  
+👉 **https://plp-taskmanager-cx75z8q6e-erick-wambuas-projects.vercel.app**
+
+---
+
+## 🏗️ Project Structure
 
 ```
 src/
-├── components/       # Reusable UI components
-├── pages/           # Page components
-├── hooks/           # Custom React hooks
-├── context/         # React context providers
-├── api/             # API integration functions
-├── utils/           # Utility functions
-└── App.jsx          # Main application component
+├── components/          # Reusable UI components
+│   ├── Button.jsx      # Button with variants
+│   ├── Card.jsx        # Card layout component
+│   ├── Navbar.jsx      # Navigation with theme toggle
+│   ├── Footer.jsx      # Site footer
+│   ├── TaskManager.jsx # Task management functionality
+│   └── APIData.jsx     # API integration component
+├── context/
+│   └── ThemeContext.jsx # Theme management context
+├── hooks/
+│   └── useLocalStorage.js # Custom hook for localStorage
+├── api/
+│   └── jsonPlaceholder.js # API service functions
+└── App.jsx             # Main application component
 ```
 
-## Submission
+---
 
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+## 🎯 Key Components
 
-1. Complete all required components and features
-2. Implement proper state management with hooks
-3. Integrate with at least one external API
-4. Style your application with Tailwind CSS
-5. Deploy your application and add the URL to your README.md
+### TaskManager
+- Add, complete, and delete tasks  
+- Filter tasks (All, Active, Completed)  
+- Persistent storage using localStorage  
+- Task statistics display  
 
-## Resources
+### APIData
+- Fetches posts from JSONPlaceholder API  
+- Search functionality  
+- Pagination  
+- Loading and error states  
 
-- [React Documentation](https://react.dev/)
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
-- [Vite Documentation](https://vitejs.dev/guide/)
-- [React Router Documentation](https://reactrouter.com/) 
+### Theme System
+- Light/Dark mode toggle  
+- Persistent theme preferences  
+- Smooth transitions  
+
+---
+
+## 🔧 Custom Hooks
+
+### useLocalStorage
+Persists state in localStorage automatically:
+
+```jsx
+const [tasks, setTasks] = useLocalStorage('tasks', []);
+```
+
+---
+
+## 🌐 API Integration
+
+The app integrates with JSONPlaceholder API to:
+- Fetch posts with pagination  
+- Handle loading and error states  
+- Implement search functionality  
+- Display API data in a responsive grid  
+
+---
+
+## 📱 Responsive Design
+
+- Mobile-first approach  
+- Responsive grid layouts  
+- Adaptive navigation  
+- Touch-friendly interactions  
+
+---
+
+## 👨‍💻 Developer
+
+Developed by **Erick Wambua** as part of the **PLP Web Development Assignment**.
+
+---
+
+## 📝 License
+
+This project is created for educational purposes as part of the **PLP curriculum**.
+
+---
+
+## 🚀 Deployment Summary
+
+The app is available locally at: **http://localhost:5173**  
+And publicly at: **https://plp-taskmanager-cx75z8q6e-erick-wambuas-projects.vercel.app**
